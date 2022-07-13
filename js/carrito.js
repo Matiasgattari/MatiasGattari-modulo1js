@@ -1,80 +1,81 @@
-let cerveza = prompt("Qué cerveza queres?").toLocaleLowerCase();
-let cantidad = parseInt(prompt("Cuántas unidades??"));
+let carrito = [{
+    id: 1,
+    nombre: "rubia",
+    precio: 100,
+    stock: 150
+},
+{
+    id: 2,
+    nombre: "negra",
+    precio: 130,
+    stock: 150
+},
+{
+    id: 2,
+    nombre: "roja",
+    precio: 150,
+    stock: 150
+},
+{
+    id: 2,
+    nombre: "honey",
+    precio: 140,
+    stock: 150
+}
+];
 
-switch (cerveza) {
-    case "rubia":
-        let resultado = 120 * cantidad;
-        let mensaje = `Son $ ${resultado}, gracias por su compra :D`
-        alert(mensaje);
-        break;
-    case "roja":
-        let resultado1 = 140 * cantidad;
-        let mensaje1 = `Son $ ${resultado1}, gracias por su compra :D`
-        alert(mensaje1);
-        break;
-    case "negra":
-        let resultado2 = 130 * cantidad;
-        let mensaje2 = `Son $ ${resultado2}, gracias por su compra :D`
-        alert(mensaje2);
-        break;
-    case "honey":
-        let resultado3 = 150 * cantidad;
-        let mensaje3 = `Son $ ${resultado3}, gracias por su compra :D`
-        alert(mensaje3);
-        break;
-    default:
-        alert("No vendemos esa cerveza...");
-        break;
+let carritoLleno = [];
+
+let compra = prompt("seleccione el tipo de cerveza: 1=Rubia, 2=Negra, 3=Roja, 4=Honey");
+let mensaje = "Gracias por su compra, podra ver los costos en el carrito"
+
+while (compra === "1") {
+let cantidad = prompt("Cuántas unidades queres?");
+let resultado = carrito[0].precio * cantidad;
+carritoLleno.push(resultado);
+alert(resultado);
+let pregunta2 = prompt("queres comrpar otra cerveza?, responde con si o no")
+if (pregunta2 === "si") {
+    compra =prompt("seleccione el tipo de cerveza: 1=Rubia, 2=Negra, 3=Roja, 4=Honey");
+}else {alert("gracias por tu compra, podras ver el costo en tu carrito de compras"); break}
+}
+while (compra === "2") {
+cantidad = prompt("Cuántas unidades queres?");
+let resultado1 = carrito[1].precio * cantidad;
+carritoLleno.push(resultado1);
+alert(resultado1);
+let pregunta2 = prompt("queres comrpar otra cerveza?, responde con si o no")
+if (pregunta2 === "si") {
+    compra =prompt("seleccione el tipo de cerveza: 1=Rubia, 2=Negra, 3=Roja, 4=Honey");
+}else {alert("gracias por tu compra, podras ver el costo en tu carrito de compras"); break}
+}
+while (compra === "3") {
+cantidad = prompt("Cuántas unidades queres?");
+let resultado2 = carrito[2].precio * cantidad;
+carritoLleno.push(resultado2);
+alert(resultado2);
+let pregunta2 = prompt("queres comrpar otra cerveza?, responde con si o no")
+if (pregunta2 === "si") {
+    compra =prompt("seleccione el tipo de cerveza: 1=Rubia, 2=Negra, 3=Roja, 4=Honey");
+}else {alert("gracias por tu compra, podras ver el costo en tu carrito de compras"); break}
+}
+while (compra === "4") {
+cantidad = prompt("Cuántas unidades queres?");
+let resultado3 = carrito[3].precio * cantidad;
+carritoLleno.push(resultado3);
+alert(resultado3);
+let pregunta2 = prompt("queres comrpar otra cerveza?, responde con si o no")
+if (pregunta2 === "si") {
+    compra =prompt("seleccione el tipo de cerveza: 1=Rubia, 2=Negra, 3=Roja, 4=Honey");
+}else {alert("gracias por tu compra, podras ver el costo en tu carrito de compras"); break}
 }
 
+// este mensaje no funciona como deberia. No puedo identificar que producto se compro con ese costo ya que en el array se guardan por orden de ingreso y solo guardo numeros.
+// alert (`Cerveza rubia: $ ${carritoLleno[0]}, Cerveza negra: $ ${carritoLleno[1]}, Cerveza roja: $ ${carritoLleno[2]}, Cerveza Honey: $ ${carritoLleno[3]}`)
+
+let total = 0;
+let totalCompra = carritoLleno.reduce((a, b) => a + b, 0);
+
+alert(`Total de la compra = $ ${totalCompra}, muchas gracias`)
 
 
-
-
-// FUNCION CONSTRUCTORA con funcion de venta para ir descontando stock en base a "cantidad" comprada. 
-
-// class Producto {
-//     constructor(nombre, precio, volumen, stock) {
-//         this.nombre = nombre;
-//         this.precio = precio;
-//         this.volumen = volumen;
-//         this.stock = stock;
-//     }
-//     vender() {
-//         if (this.stock != 0) {
-//             console.log("Con stock, procede venta");
-//             this.stock = this.stock - cantidad;
-//         } else {
-//             console.log("SIN STOCK. venta detenida");
-//         }
-//     }
-// }
-
-
-// const producto1 = new Producto("rubia", 120, "375ml", 25);
-// const producto2 = new Producto("negra", 130, "375lm", 15);
-// const producto3 = new Producto("roja", 140, "500ml", 20);
-// const producto4 = new Producto("honey", 150, "250ml", 35);
-
-
-
-// ejemplo de como se iria ejecutando todo en consola para ver la baja de stock y si se puede o no vender 
-
-// console.log(`Stock: ${producto1.stock}`);
-// console.log(producto1);
-// producto1.vender();
-// console.log(" ");
-
-// console.log(`Stock: ${producto1.stock}`);
-// console.log(producto1);
-// producto1.vender();
-// console.log(" ");
-
-// console.log(`Stock: ${producto1.stock}`);
-// console.log(producto1);
-// producto1.vender();
-// console.log(" ");
-
-// console.log(`Stock: ${producto1.stock}`);
-// console.log(producto1);
-// producto1.vender();
