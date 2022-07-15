@@ -180,3 +180,69 @@ footer {
 }
 
 
+
+form.loginDiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    line-height: 25px;
+    font-size: 25px;
+    background-color: gray;
+    color: antiquewhite;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px black;
+    opacity: 85%;
+    border-color: antiquewhite;
+    border-radius: 35px;
+    
+    margin: 20px;
+    margin-top: 35px;
+
+}
+.bloque {
+    display: block;
+}
+
+.tamañoInput {
+    height: 45px;
+    width: 85%;
+    margin: 10px;
+    margin-top: 15px;
+    border-radius: 7px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    box-shadow: 4px 4px rgb(88, 85, 85);
+}
+
+
+.rojo {
+    background-color: red;
+    font-size: 21px;
+    font-style: italic;
+    width:max-content;
+    margin-left: 13%;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    opacity: 75%;
+    }
+
+
+    .verde {background-color: green;
+        font-size: 21px;
+        font-style: italic;
+        width:max-content;
+        margin-left: 13%;
+        text-align: center;
+        border-radius: 15px;
+        padding: 10px;
+        opacity: 75%;
+        }
+/* div.login {
+    width: 35%;
+} */
