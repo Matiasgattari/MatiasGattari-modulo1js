@@ -79,3 +79,16 @@ let totalCompra = carritoLleno.reduce((a, b) => a + b, 0);
 alert(`Total de la compra = $ ${totalCompra}, muchas gracias`)
 
 
+
+
+
+
+// METODOS DE BUSQUEDA Y FILTRADO
+// let valor = 140;
+// let tipo = "rubia";
+// let valor = prompt("ingrese un valor minimo")
+// let tipo = prompt("ingrese tipo de cerveza")
+// let filtrados = carrito.filter(elemento => elemento.precio > valor);
+// let filtrados2 = carrito.filter(elemento => elemento.nombre === tipo);
+// console.log(filtrados);
+// console.log(filtrados2);
