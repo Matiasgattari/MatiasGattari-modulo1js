@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/estilo.css">
+
+    <title>Tienda</title>
+</head>
+
+<body>
+
+    <header>
+
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="./img/menu.png" alt="icono menu" srcset="" class="imagenMenu"></label>
+        <nav class="menu">
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Servicio</a></li>
+                <li><a href="">Productos</a></li>
+                <li><a href="">Clientes</a></li>
+                <li><a href="">Contactos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <!-- START SECTION STORE -->
+    <section class="store">
+        <div class="container">
+            <div class="items">
+                <div class="row">
+
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Cerveza Rubia</h3>
+                            <img class="item-image" src="../img/cerveza.webp">
+
+                            <div class="item-details">
+                                <h4 class="item-price">150</h4>
+                                <button class="item-button btn btn-primary agregarCarrito">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Cerveza Roja</h3>
+
+                            <img class="item-image" src="../img/cerveza1.jpg">
+
+                            <div class="item-details">
+                                <h4 class="item-price">120</h4>
+                                <button class="item-button btn btn-primary agregarCarrito">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+
+                 <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Cerveza negra</h3>
+
+                            <img class="item-image" src="../img/producto3.jpg">
+
+                            <div class="item-details">
+                                <h4 class="item-price">130</h4>
+                                <button class="item-button btn btn-primary agregarCarrito">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Cerveza honey</h3>
+
+                            <img class="item-image" src="../img/producto4.jpg">
+
+                            <div class="item-details">
+                                <h4 class="item-price">150</h4>
+                                <button class="item-button btn btn-primary agregarCarrito">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION STORE -->
+
+
+
+    <!-- START SECTION SHOPPING CART -->
+    <section class="shopping-cart">
+        <div class="container" id="carritoCompraCartel">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- En este div vamos a ir cargando los elementos del carrito -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+
+            </div>
+            <!-- aca finaliza el carrito-->
+
+            <button id="botonComprar">Comprar</button>
+
+
+            <!-- END TOTAL -->
+
+        </div>
+
+    </section>
+    <!-- END SECTION SHOPPING CART -->
+
+    <a href="../index.html">Volver al index</a>
+    <!-- START FOOTER -->
+    <footer class="bg-dark p-3 mt-5">
+        <p class="text-center m-0 text-muted">Tienda cerveza artesanal</p>
+    </footer>
+    <!-- END FOOTER -->
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+    <script src="../js/segundocarrito.js"></script>
+
+    <!-- <script src="./tienda.js"></script> -->
+</body>
+
+</html>
